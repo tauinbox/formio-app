@@ -1,7 +1,7 @@
 import Components from 'formiojs/build/components/index';
 import {BaseComponent} from 'formiojs/build/components/base/Base';
 
-export class CustomComponent extends BaseComponent {
+export class CustomButton extends BaseComponent {
   component;
   _loading;
   ce;
@@ -19,7 +19,7 @@ export class CustomComponent extends BaseComponent {
 
   elementInfo() {
     let info = super.elementInfo();
-    info.type = 'button';
+    info.type = 'customButton';
     info.attr.type = this.component.action;
     info.attr.class = 'btn btn-' + this.component.theme;
     if (this.component.block) {
@@ -51,6 +51,7 @@ export class CustomComponent extends BaseComponent {
   }
 
   build() {
+    console.log('123');
     this.element = this.ce('element', this.info.type, this.info.attr);
     if (this.component.label) {
       this.label = this.text(this.component.label);
@@ -89,4 +90,4 @@ export class CustomComponent extends BaseComponent {
   }
 }
 
-Components.assentButton = CustomComponent;
+Components.customButton = CustomButton;

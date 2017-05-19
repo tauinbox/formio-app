@@ -10,6 +10,7 @@ import { HeaderComponent } from './components/header/header';
 import { FooterComponent } from './components/footer/footer';
 import { FormioGrid } from 'ng2-formio/grid';
 import { AuthConfig, AppConfig } from '../config';
+import './custom_formio_components/button/customButton';
 
 @Component({
   template: '<div class="container"><router-outlet></router-outlet></div>'
