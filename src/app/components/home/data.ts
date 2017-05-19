@@ -176,7 +176,7 @@ export const FORM: any = {
                         show: "",
                         when: null
                     },
-                    placeholder: "type here something",
+                    placeholder: "type something in here",
                     defaultValue: "",
                     numericLabel: "5",
                     isNumericLabelEnabled: false
