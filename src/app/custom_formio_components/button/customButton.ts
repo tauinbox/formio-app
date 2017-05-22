@@ -1,5 +1,7 @@
-import Components from 'formiojs/build/components/index';
+import * as Components from 'formiojs/build/components/index';
 import {BaseComponent} from 'formiojs/build/components/base/Base';
+
+// console.log('!!!!!!!!!', Components, BaseComponent);
 
 export class CustomButton extends BaseComponent {
   component;
