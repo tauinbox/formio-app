@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { FormioAuthService } from 'ng2-formio/auth';
 import { FormioResources } from 'ng2-formio/resource';
+import './custom_formio_components/f_components';
 
 @Component({
   selector: 'formio-app',

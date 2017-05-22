@@ -1,7 +1,4 @@
-import * as Components from 'formiojs/build/components/index';
 import {BaseComponent} from 'formiojs/build/components/base/Base';
-
-// console.log('!!!!!!!!!', Components, BaseComponent);
 
 export class CustomButton extends BaseComponent {
   component;
@@ -40,8 +37,7 @@ export class CustomButton extends BaseComponent {
     if (this.loader) {
       if (loading) {
         this.element.appendChild(this.loader);
-      }
-      else {
+      } else {
         this.element.removeChild(this.loader);
       }
     }
@@ -53,7 +49,6 @@ export class CustomButton extends BaseComponent {
   }
 
   build() {
-    console.log('123');
     this.element = this.ce('element', this.info.type, this.info.attr);
     if (this.component.label) {
       this.label = this.text(this.component.label);
@@ -92,4 +87,3 @@ export class CustomButton extends BaseComponent {
   }
 }
 
-Components.customButton = CustomButton;
