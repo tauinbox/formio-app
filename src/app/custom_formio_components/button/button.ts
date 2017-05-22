@@ -18,7 +18,7 @@ export class CustomButton extends BaseComponent {
 
   elementInfo() {
     let info = super.elementInfo();
-    info.type = 'customButton';
+    info.type = 'button';
     info.attr.type = this.component.action;
     info.attr.class = 'btn btn-' + this.component.theme;
     if (this.component.block) {
