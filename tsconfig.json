@@ -15,6 +15,9 @@
       "core-js"
     ]
   },
+  "include": [
+    "src/**/*"
+  ],
   "compileOnSave": false,
   "filesGlob": [
     "src/**/*.ts",

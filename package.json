@@ -12,7 +12,7 @@
     "core-js": "^2.4.1",
     "lodash": "^4.17.4",
     "ng2-bootstrap": "^1.3.3",
-    "ng2-formio": "git+https://github.com/tauinbox/ng2-formio.git",
+    "ng2-formio": "file:modules/ng2-formio",
     "rxjs": "^5.3.1",
     "zone.js": "^0.8.10"
   },
@@ -67,7 +67,10 @@
     "serve": "gulp serve",
     "serve:dist": "gulp serve:dist",
     "test": "gulp test",
-    "test:auto": "gulp test:auto"
+    "test:auto": "gulp test:auto",
+    "install-formiojs": "cd modules/formiojs && npm install",
+    "install-ng2-formio": "cd modules/ng2-formio && npm install",
+    "install-all": "npm run install-formiojs && npm run install-ng2-formio && npm install"
   },
   "eslintConfig": {
     "root": true,

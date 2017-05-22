@@ -1,0 +1,17 @@
+node_modules
+typings
+npm-debug.log
+*.metadata.json
+*.ngfactory.ts
+*.ngfactory.js
+*.ngsummary.json
+*.ngstyle.ts
+*.map.js
+*.d.ts
+auth.js
+grid.js
+resource.js
+src/**/*.js
+.DS_Store
+.idea
+.vscode
