@@ -1,0 +1,1267 @@
+{
+  "page": 0,
+  "display": "wizard",
+  "pageKey": "page5",
+  "numLabel": false,
+  "numPages": 6,
+  "components": [
+    {
+      "key": "page5",
+      "form": {},
+      "tags": [],
+      "type": "panel",
+      "input": false,
+      "theme": "default",
+      "title": "Basic components",
+      "components": [
+        {
+          "key": "textFieldComponent",
+          "form": {},
+          "tags": [],
+          "type": "textfield",
+          "input": true,
+          "label": "Text Field Component",
+          "prefix": "",
+          "suffix": "",
+          "unique": false,
+          "multiple": false,
+          "validate": {
+            "custom": "",
+            "pattern": "",
+            "required": false,
+            "maxLength": "",
+            "minLength": "",
+            "customPrivate": false
+          },
+          "inputMask": "",
+          "inputType": "text",
+          "protected": false,
+          "tableView": true,
+          "persistent": true,
+          "conditional": {
+            "eq": "",
+            "show": "",
+            "when": null
+          },
+          "placeholder": "",
+          "defaultValue": "",
+          "numericLabel": "1",
+          "isNumericLabelEnabled": true
+        },
+        {
+          "key": "numberComponent",
+          "form": {},
+          "tags": [],
+          "type": "number",
+          "input": true,
+          "label": "Number Component",
+          "prefix": "",
+          "suffix": "",
+          "validate": {
+            "max": "",
+            "min": "",
+            "step": "any",
+            "custom": "",
+            "integer": "",
+            "multiple": "",
+            "required": false
+          },
+          "inputType": "number",
+          "protected": false,
+          "tableView": true,
+          "persistent": true,
+          "conditional": {
+            "eq": "",
+            "show": "",
+            "when": null
+          },
+          "placeholder": "",
+          "defaultValue": "",
+          "numericLabel": "2",
+          "isNumericLabelEnabled": true
+        },
+        {
+          "key": "passwordComponent",
+          "form": {},
+          "tags": [],
+          "type": "password",
+          "input": true,
+          "label": "Password Component",
+          "prefix": "",
+          "suffix": "",
+          "inputType": "password",
+          "protected": true,
+          "tableView": false,
+          "persistent": true,
+          "conditional": {
+            "eq": "",
+            "show": "",
+            "when": null
+          },
+          "placeholder": "",
+          "numericLabel": "3",
+          "isNumericLabelEnabled": true
+        },
+        {
+          "key": "textAreaComponent",
+          "form": {},
+          "rows": 3,
+          "tags": [],
+          "type": "textarea",
+          "input": true,
+          "label": "Text Area Component",
+          "prefix": "",
+          "suffix": "",
+          "wysiwyg": false,
+          "multiple": false,
+          "validate": {
+            "custom": "",
+            "pattern": "",
+            "required": false,
+            "maxLength": "",
+            "minLength": ""
+          },
+          "protected": false,
+          "tableView": true,
+          "persistent": true,
+          "conditional": {
+            "eq": "",
+            "show": "",
+            "when": null
+          },
+          "placeholder": "Text Area Component",
+          "defaultValue": "",
+          "numericLabel": "4",
+          "isNumericLabelEnabled": true
+        },
+        {
+          "key": "textAreaComponent1",
+          "form": {},
+          "tags": [],
+          "type": "checkbox",
+          "input": true,
+          "label": "Check Box Component",
+          "validate": {
+            "required": false
+          },
+          "hideLabel": true,
+          "inputType": "checkbox",
+          "protected": false,
+          "tableView": true,
+          "persistent": true,
+          "conditional": {
+            "eq": "",
+            "show": "",
+            "when": null
+          },
+          "defaultValue": false,
+          "numericLabel": "5",
+          "isNumericLabelEnabled": true
+        },
+        {
+          "key": "checkBoxComponent",
+          "form": {},
+          "type": "selectboxes",
+          "input": true,
+          "label": "Check Box Component",
+          "inline": false,
+          "values": [
+            {
+              "label": "test",
+              "value": "test"
+            },
+            {
+              "label": "test2",
+              "value": "test2"
+            }
+          ],
+          "validate": {
+            "required": false
+          },
+          "protected": false,
+          "tableView": true,
+          "persistent": true,
+          "conditional": {
+            "eq": "",
+            "show": "",
+            "when": null
+          },
+          "numericLabel": "6",
+          "isNumericLabelEnabled": true
+        },
+        {
+          "key": "selectComponent",
+          "data": {
+            "url": "",
+            "json": "",
+            "custom": "",
+            "values": [
+              {
+                "label": "test",
+                "value": "test"
+              },
+              {
+                "label": "test2",
+                "value": "test2"
+              }
+            ],
+            "resource": ""
+          },
+          "form": {},
+          "tags": [],
+          "type": "select",
+          "input": true,
+          "label": "Select Component",
+          "filter": "",
+          "unique": false,
+          "dataSrc": "values",
+          "multiple": false,
+          "template": "<span>{{ item.label }}<\/span>",
+          "validate": {
+            "required": false
+          },
+          "protected": false,
+          "refreshOn": "",
+          "tableView": true,
+          "persistent": true,
+          "conditional": {
+            "eq": "",
+            "show": "",
+            "when": null
+          },
+          "placeholder": "",
+          "authenticate": false,
+          "defaultValue": "",
+          "numericLabel": "7",
+          "valueProperty": "",
+          "isNumericLabelEnabled": true
+        },
+        {
+          "key": "radioComponent",
+          "form": {},
+          "tags": [],
+          "type": "radio",
+          "input": true,
+          "label": "Radio Component",
+          "values": [
+            {
+              "label": "lorem",
+              "value": "lorem"
+            },
+            {
+              "label": "lorem2",
+              "value": "lorem2"
+            }
+          ],
+          "validate": {
+            "custom": "",
+            "required": false,
+            "customPrivate": false
+          },
+          "inputType": "radio",
+          "protected": false,
+          "tableView": true,
+          "persistent": true,
+          "conditional": {
+            "eq": "",
+            "show": "",
+            "when": null
+          },
+          "defaultValue": "",
+          "numericLabel": "8",
+          "isNumericLabelEnabled": true
+        },
+        {
+          "key": "qWithCheckboxesField2",
+          "data": {
+            "url": "/substances/substancelist/a2eecc70-e9ff-11e6-8f10-ffbd041035b6",
+            "comma": "",
+            "values": [
+              {
+                "label": "Yes",
+                "value": "true"
+              }
+            ],
+            "predefLists": [
+              {
+                "id": "46daa060-13b9-11e7-bc70-5f32c492e13c",
+                "code": "all",
+                "name": "all",
+                "version": "1"
+              },
+              {
+                "id": "6a815940-e86d-11e6-a9b0-c9266c22cc9e",
+                "code": "sl",
+                "name": "sl",
+                "version": "1"
+              },
+              {
+                "id": "70a946b0-fcb9-11e6-90a0-55cfda66ee3d",
+                "code": "iudytuyi",
+                "name": "my new list",
+                "version": "1"
+              },
+              {
+                "id": "a2eecc70-e9ff-11e6-8f10-ffbd041035b6",
+                "code": "10",
+                "name": "Substance list 10",
+                "version": "1.0"
+              },
+              {
+                "id": "aa7167f0-e9ff-11e6-8f10-ffbd041035b6",
+                "code": "20",
+                "name": "Substance list 20",
+                "version": "1.2"
+              },
+              {
+                "id": "b17b02e0-e9ff-11e6-8f10-ffbd041035b6",
+                "code": "30",
+                "name": "Substance list 30",
+                "version": "1.3"
+              },
+              {
+                "id": "b7286930-e9ff-11e6-8f10-ffbd041035b6",
+                "code": "40",
+                "name": "Substance list 40",
+                "version": "1.4"
+              }
+            ]
+          },
+          "form": {},
+          "tags": [],
+          "type": "qWithCheckboxes",
+          "input": true,
+          "label": "",
+          "filter": "",
+          "inline": false,
+          "values": [],
+          "dataSrc": "predefined.substancelist",
+          "template": "<span>{{ item.substance.name }}<\/span>",
+          "validate": {
+            "required": false
+          },
+          "inputType": "checkbox",
+          "protected": false,
+          "refreshOn": "",
+          "tableView": true,
+          "undefined": "Substance list",
+          "persistent": true,
+          "conditional": {
+            "eq": "",
+            "show": "",
+            "when": null
+          },
+          "dataSources": {
+            "url": "URL",
+            "comma": "Comma separated",
+            "values": "Values",
+            "predefined.substancelist": "Substance list",
+            "predefined.substancegroup": "Substance group"
+          },
+          "searchField": "",
+          "defaultValue": "",
+          "numericLabel": "9",
+          "selectValues": "data.results",
+          "labelProperty": "substance.name",
+          "valueProperty": "substance.id",
+          "predefinedlist": {
+            "predefined.substancelist": {
+              "Template": "<span>{{ item.substance.name }}<\/span>",
+              "SelectValues": "data.results",
+              "ValueProperty": "substance.id",
+              "PredefinedListID": "PredefinedLists1",
+              "PredefinedListName": "substancelist",
+              "PredefinedListLabel": "Substance list"
+            },
+            "predefined.substancegroup": {
+              "Template": "<span>{{ item.substance.name }}<\/span>",
+              "SelectValues": "data.results",
+              "ValueProperty": "substance.id",
+              "PredefinedListID": "PredefinedLists2",
+              "PredefinedListName": "substancegroup",
+              "PredefinedListLabel": "Substance group"
+            }
+          },
+          "dynamicCondition": {
+            "pages": [
+              {
+                "key": "resource1",
+                "title": "Resource 1"
+              }
+            ],
+            "answers": {},
+            "selectAll": true
+          },
+          "selectedPredefList": "a2eecc70-e9ff-11e6-8f10-ffbd041035b6",
+          "isNumericLabelEnabled": false
+        }
+      ],
+      "conditional": {
+        "eq": "",
+        "show": "",
+        "when": null
+      },
+      "protectedKey": "14888971087846530797461",
+      "componentsCount": 8
+    },
+    {
+      "key": "page6",
+      "form": {},
+      "tags": [],
+      "type": "panel",
+      "theme": "default",
+      "title": "Special Copmonents",
+      "components": [
+        {
+          "key": "dayComponent",
+          "form": {},
+          "tags": [],
+          "type": "day",
+          "label": "Day Component",
+          "fields": {
+            "day": {
+              "type": "text",
+              "required": false,
+              "placeholder": ""
+            },
+            "year": {
+              "type": "text",
+              "required": false,
+              "placeholder": ""
+            },
+            "month": {
+              "type": "select",
+              "required": false,
+              "placeholder": ""
+            }
+          },
+          "dayFirst": false,
+          "validate": {
+            "custom": ""
+          },
+          "protected": false,
+          "tableView": true,
+          "persistent": true,
+          "conditional": {
+            "eq": "",
+            "show": "",
+            "when": null
+          },
+          "numericLabel": "9",
+          "isNumericLabelEnabled": true
+        },
+        {
+          "key": "dataGridComponent",
+          "form": {},
+          "tags": [],
+          "tree": true,
+          "type": "datagrid",
+          "label": "Data Grid Component",
+          "protected": false,
+          "tableView": true,
+          "components": [],
+          "persistent": true,
+          "conditional": {
+            "eq": "",
+            "show": "",
+            "when": null
+          },
+          "numericLabel": "10",
+          "isNumericLabelEnabled": true
+        },
+        {
+          "key": "containerComponent",
+          "form": {},
+          "tags": [],
+          "tree": true,
+          "type": "container",
+          "label": "Container Component",
+          "protected": false,
+          "tableView": true,
+          "components": [],
+          "persistent": true,
+          "conditional": {
+            "eq": "",
+            "show": "",
+            "when": null
+          },
+          "numericLabel": "11",
+          "isNumericLabelEnabled": true
+        },
+        {
+          "key": "surveyComponent",
+          "form": {},
+          "tags": [],
+          "type": "survey",
+          "label": "Survey Component",
+          "values": [
+            {
+              "label": "a",
+              "value": "a"
+            },
+            {
+              "label": "b",
+              "value": "b"
+            }
+          ],
+          "validate": {
+            "custom": "",
+            "required": false,
+            "customPrivate": false
+          },
+          "protected": false,
+          "questions": [
+            {
+              "label": "1",
+              "value": "1"
+            },
+            {
+              "label": "2",
+              "value": "2"
+            }
+          ],
+          "tableView": true,
+          "persistent": true,
+          "conditional": {
+            "eq": "",
+            "show": "",
+            "when": null
+          },
+          "defaultValue": "",
+          "numericLabel": "12",
+          "isNumericLabelEnabled": true
+        }
+      ],
+      "conditional": {
+        "eq": "",
+        "show": "",
+        "when": null
+      },
+      "protectedKey": "14888971087843877351914",
+      "componentsCount": 12
+    },
+    {
+      "key": "page7",
+      "form": {},
+      "tags": [],
+      "type": "panel",
+      "theme": "default",
+      "title": "Layout Components",
+      "components": [
+        {
+          "key": "columns1",
+          "form": {},
+          "tags": [],
+          "type": "columns",
+          "columns": [
+            {
+              "components": [
+                {
+                  "key": "textFieldComponent1",
+                  "form": {},
+                  "tags": [],
+                  "type": "textfield",
+                  "isNew": false,
+                  "label": "Text Field Component",
+                  "prefix": "",
+                  "suffix": "",
+                  "unique": false,
+                  "multiple": false,
+                  "validate": {
+                    "custom": "",
+                    "pattern": "",
+                    "required": false,
+                    "maxLength": "",
+                    "minLength": "",
+                    "customPrivate": false
+                  },
+                  "inputMask": "",
+                  "inputType": "text",
+                  "protected": false,
+                  "tableView": true,
+                  "persistent": true,
+                  "conditional": {
+                    "eq": "",
+                    "show": "",
+                    "when": null
+                  },
+                  "placeholder": "",
+                  "defaultValue": "",
+                  "numericLabel": "13.1.1",
+                  "isNumericLabelEnabled": true
+                }
+              ]
+            },
+            {
+              "components": [
+                {
+                  "key": "textFieldComponent2",
+                  "form": {},
+                  "tags": [],
+                  "type": "textfield",
+                  "label": "Text Field Component",
+                  "prefix": "",
+                  "suffix": "",
+                  "unique": false,
+                  "multiple": false,
+                  "validate": {
+                    "custom": "",
+                    "pattern": "",
+                    "required": false,
+                    "maxLength": "",
+                    "minLength": "",
+                    "customPrivate": false
+                  },
+                  "inputMask": "",
+                  "inputType": "text",
+                  "protected": false,
+                  "tableView": true,
+                  "persistent": true,
+                  "conditional": {
+                    "eq": "",
+                    "show": "",
+                    "when": null
+                  },
+                  "placeholder": "",
+                  "defaultValue": "",
+                  "numericLabel": "13.2.1",
+                  "isNumericLabelEnabled": true
+                }
+              ]
+            }
+          ],
+          "conditional": {
+            "eq": "",
+            "show": "",
+            "when": null
+          },
+          "numericLabel": "13",
+          "isNumericLabelEnabled": true
+        },
+        {
+          "key": "fieldset1",
+          "form": {},
+          "tags": [],
+          "type": "fieldset",
+          "legend": "Field Set Component",
+          "tableView": true,
+          "components": [
+            {
+              "key": "numberComponent1",
+              "form": {},
+              "tags": [],
+              "type": "number",
+              "label": "Number Component",
+              "prefix": "",
+              "suffix": "",
+              "validate": {
+                "max": "",
+                "min": "",
+                "step": "any",
+                "custom": "",
+                "integer": "",
+                "multiple": "",
+                "required": false
+              },
+              "inputType": "number",
+              "protected": false,
+              "tableView": true,
+              "persistent": true,
+              "conditional": {
+                "eq": "",
+                "show": "",
+                "when": null
+              },
+              "placeholder": "",
+              "defaultValue": "",
+              "numericLabel": "14.1",
+              "isNumericLabelEnabled": true
+            }
+          ],
+          "conditional": {
+            "eq": "",
+            "show": "",
+            "when": null
+          },
+          "numericLabel": "14",
+          "isNumericLabelEnabled": true
+        },
+        {
+          "key": "panel1",
+          "form": {},
+          "tags": [],
+          "type": "panel",
+          "theme": "default",
+          "title": "Panel Component",
+          "components": [
+            {
+              "key": "numberComponent2",
+              "form": {},
+              "tags": [],
+              "type": "number",
+              "label": "Number Component",
+              "prefix": "",
+              "suffix": "",
+              "validate": {
+                "max": "",
+                "min": "",
+                "step": "any",
+                "custom": "",
+                "integer": "",
+                "multiple": "",
+                "required": false
+              },
+              "inputType": "number",
+              "protected": false,
+              "tableView": true,
+              "persistent": true,
+              "conditional": {
+                "eq": "",
+                "show": "",
+                "when": null
+              },
+              "placeholder": "",
+              "defaultValue": "",
+              "numericLabel": "15.1",
+              "isNumericLabelEnabled": true
+            }
+          ],
+          "conditional": {
+            "eq": "",
+            "show": "",
+            "when": null
+          },
+          "numericLabel": "15",
+          "isNumericLabelEnabled": true
+        },
+        {
+          "key": "table1",
+          "form": {},
+          "rows": [
+            [
+              {
+                "components": [
+                  {
+                    "key": "textFieldComponent3",
+                    "form": {},
+                    "tags": [],
+                    "type": "textfield",
+                    "label": "Text Field Component",
+                    "prefix": "",
+                    "suffix": "",
+                    "unique": false,
+                    "multiple": false,
+                    "validate": {
+                      "custom": "",
+                      "pattern": "",
+                      "required": false,
+                      "maxLength": "",
+                      "minLength": "",
+                      "customPrivate": false
+                    },
+                    "inputMask": "",
+                    "inputType": "text",
+                    "protected": false,
+                    "tableView": true,
+                    "persistent": true,
+                    "conditional": {
+                      "eq": "",
+                      "show": "",
+                      "when": null
+                    },
+                    "placeholder": "",
+                    "defaultValue": "",
+                    "numericLabel": "16.1.1",
+                    "isNumericLabelEnabled": true
+                  }
+                ]
+              },
+              {
+                "components": [
+                  {
+                    "key": "textFieldComponent4",
+                    "form": {},
+                    "tags": [],
+                    "type": "textfield",
+                    "label": "Text Field Component",
+                    "prefix": "",
+                    "suffix": "",
+                    "unique": false,
+                    "multiple": false,
+                    "validate": {
+                      "custom": "",
+                      "pattern": "",
+                      "required": false,
+                      "maxLength": "",
+                      "minLength": "",
+                      "customPrivate": false
+                    },
+                    "inputMask": "",
+                    "inputType": "text",
+                    "protected": false,
+                    "tableView": true,
+                    "persistent": true,
+                    "conditional": {
+                      "eq": "",
+                      "show": "",
+                      "when": null
+                    },
+                    "placeholder": "",
+                    "defaultValue": "",
+                    "numericLabel": "16.2.1",
+                    "isNumericLabelEnabled": true
+                  }
+                ]
+              },
+              {
+                "components": [
+                  {
+                    "key": "textFieldComponent5",
+                    "form": {},
+                    "tags": [],
+                    "type": "textfield",
+                    "label": "Text Field Component",
+                    "prefix": "",
+                    "suffix": "",
+                    "unique": false,
+                    "multiple": false,
+                    "validate": {
+                      "custom": "",
+                      "pattern": "",
+                      "required": false,
+                      "maxLength": "",
+                      "minLength": "",
+                      "customPrivate": false
+                    },
+                    "inputMask": "",
+                    "inputType": "text",
+                    "protected": false,
+                    "tableView": true,
+                    "persistent": true,
+                    "conditional": {
+                      "eq": "",
+                      "show": "",
+                      "when": null
+                    },
+                    "placeholder": "",
+                    "defaultValue": "",
+                    "numericLabel": "16.3.1",
+                    "isNumericLabelEnabled": true
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "components": []
+              },
+              {
+                "components": [
+                  {
+                    "key": "textFieldComponent7",
+                    "form": {},
+                    "tags": [],
+                    "type": "textfield",
+                    "isNew": false,
+                    "label": "Text Field Component",
+                    "prefix": "",
+                    "suffix": "",
+                    "unique": false,
+                    "multiple": false,
+                    "validate": {
+                      "custom": "",
+                      "pattern": "",
+                      "required": false,
+                      "maxLength": "",
+                      "minLength": "",
+                      "customPrivate": false
+                    },
+                    "inputMask": "",
+                    "inputType": "text",
+                    "protected": false,
+                    "tableView": true,
+                    "persistent": true,
+                    "conditional": {
+                      "eq": "",
+                      "show": "",
+                      "when": null
+                    },
+                    "placeholder": "",
+                    "defaultValue": "",
+                    "numericLabel": "16.2.2",
+                    "isNumericLabelEnabled": true
+                  }
+                ]
+              },
+              {
+                "components": []
+              }
+            ],
+            [
+              {
+                "components": [
+                  {
+                    "key": "textFieldComponent6",
+                    "form": {},
+                    "tags": [],
+                    "type": "textfield",
+                    "label": "Text Field Component",
+                    "prefix": "",
+                    "suffix": "",
+                    "unique": false,
+                    "multiple": false,
+                    "validate": {
+                      "custom": "",
+                      "pattern": "",
+                      "required": false,
+                      "maxLength": "",
+                      "minLength": "",
+                      "customPrivate": false
+                    },
+                    "inputMask": "",
+                    "inputType": "text",
+                    "protected": false,
+                    "tableView": true,
+                    "persistent": true,
+                    "conditional": {
+                      "eq": "",
+                      "show": "",
+                      "when": null
+                    },
+                    "placeholder": "",
+                    "defaultValue": "",
+                    "numericLabel": "16.1.2",
+                    "isNumericLabelEnabled": true
+                  }
+                ]
+              },
+              {
+                "components": [
+                  {
+                    "key": "textField1",
+                    "form": {},
+                    "tags": [],
+                    "type": "textfield",
+                    "label": "Text Field Component",
+                    "prefix": "",
+                    "suffix": "",
+                    "unique": false,
+                    "multiple": false,
+                    "validate": {
+                      "custom": "",
+                      "pattern": "",
+                      "required": false,
+                      "maxLength": "",
+                      "minLength": "",
+                      "customPrivate": false
+                    },
+                    "inputMask": "",
+                    "inputType": "text",
+                    "protected": false,
+                    "tableView": true,
+                    "persistent": true,
+                    "conditional": {
+                      "eq": "",
+                      "show": "",
+                      "when": null
+                    },
+                    "placeholder": "",
+                    "defaultValue": "",
+                    "numericLabel": "16.2.3",
+                    "isNumericLabelEnabled": true
+                  }
+                ]
+              },
+              {
+                "components": []
+              }
+            ]
+          ],
+          "tags": [],
+          "type": "table",
+          "hover": false,
+          "header": [],
+          "caption": "",
+          "numCols": 3,
+          "numRows": 3,
+          "striped": false,
+          "bordered": false,
+          "condensed": false,
+          "conditional": {
+            "eq": "",
+            "show": "",
+            "when": null
+          },
+          "numericLabel": "16",
+          "isNumericLabelEnabled": true
+        },
+        {
+          "key": "well1",
+          "form": {},
+          "tags": [],
+          "type": "well",
+          "components": [
+            {
+              "key": "numberField1",
+              "form": {},
+              "tags": [],
+              "type": "number",
+              "label": "",
+              "prefix": "",
+              "suffix": "",
+              "validate": {
+                "max": "",
+                "min": "",
+                "step": "any",
+                "custom": "",
+                "integer": "",
+                "multiple": "",
+                "required": false
+              },
+              "inputType": "number",
+              "protected": false,
+              "tableView": true,
+              "persistent": true,
+              "conditional": {
+                "eq": "",
+                "show": "",
+                "when": null
+              },
+              "placeholder": "Number Component",
+              "defaultValue": "",
+              "numericLabel": "17.1",
+              "isNumericLabelEnabled": true
+            }
+          ],
+          "conditional": {
+            "eq": "",
+            "show": "",
+            "when": null
+          },
+          "numericLabel": "17",
+          "isNumericLabelEnabled": true
+        },
+        {
+          "key": "resourcePanel1",
+          "form": {},
+          "tags": [],
+          "type": "resourcePanel",
+          "theme": "default",
+          "title": "Resource Component",
+          "components": [],
+          "numericLabel": "18",
+          "isNumericLabelEnabled": true
+        }
+      ],
+      "conditional": {
+        "eq": "",
+        "show": "",
+        "when": null
+      },
+      "protectedKey": "1488897108784399749814",
+      "componentsCount": 18
+    },
+    {
+      "key": "resource1",
+      "form": {},
+      "type": "resourcePanel",
+      "isNew": false,
+      "theme": "default",
+      "title": "Resource 1",
+      "components": [
+        {
+          "key": "qWithTextField1",
+          "form": {},
+          "tags": [],
+          "type": "qWithText",
+          "label": "<p>Resource 1 page<\/p>",
+          "inline": false,
+          "validate": {
+            "required": false,
+            "maxLength": 100
+          },
+          "protected": false,
+          "persistent": true,
+          "conditional": {
+            "eq": "",
+            "show": "",
+            "when": null
+          },
+          "placeholder": "",
+          "numericLabel": "19",
+          "isNumericLabelEnabled": true
+        }
+      ],
+      "componentsCount": 19
+    },
+    {
+      "key": "resource2",
+      "form": {},
+      "tags": [],
+      "type": "resourcePanel",
+      "isNew": false,
+      "theme": "default",
+      "title": "Resource 2",
+      "components": [
+        {
+          "key": "qWithTextField2",
+          "form": {},
+          "tags": [],
+          "type": "qWithText",
+          "label": "<p>Resource 2 page<\/p>",
+          "inline": false,
+          "validate": {
+            "required": false,
+            "maxLength": 100
+          },
+          "protected": false,
+          "persistent": true,
+          "conditional": {
+            "eq": "",
+            "show": "",
+            "when": null
+          },
+          "placeholder": "",
+          "numericLabel": "20",
+          "isNumericLabelEnabled": true
+        }
+      ],
+      "componentsCount": 20
+    },
+    {
+      "key": "page4",
+      "form": {},
+      "type": "panel",
+      "isNew": false,
+      "theme": "default",
+      "title": "Page 4",
+      "components": [
+        {
+          "key": "qWithCheckboxesField1",
+          "data": {
+            "url": "/substances/substancelist/a2eecc70-e9ff-11e6-8f10-ffbd041035b6",
+            "comma": "",
+            "values": [
+              {
+                "label": "Yes",
+                "value": "true"
+              }
+            ],
+            "predefLists": [
+              {
+                "id": "46daa060-13b9-11e7-bc70-5f32c492e13c",
+                "code": "all",
+                "name": "all",
+                "version": "1"
+              },
+              {
+                "id": "6a815940-e86d-11e6-a9b0-c9266c22cc9e",
+                "code": "sl",
+                "name": "sl",
+                "version": "1"
+              },
+              {
+                "id": "70a946b0-fcb9-11e6-90a0-55cfda66ee3d",
+                "code": "iudytuyi",
+                "name": "my new list",
+                "version": "1"
+              },
+              {
+                "id": "a2eecc70-e9ff-11e6-8f10-ffbd041035b6",
+                "code": "10",
+                "name": "Substance list 10",
+                "version": "1.0"
+              },
+              {
+                "id": "aa7167f0-e9ff-11e6-8f10-ffbd041035b6",
+                "code": "20",
+                "name": "Substance list 20",
+                "version": "1.2"
+              },
+              {
+                "id": "b17b02e0-e9ff-11e6-8f10-ffbd041035b6",
+                "code": "30",
+                "name": "Substance list 30",
+                "version": "1.3"
+              },
+              {
+                "id": "b7286930-e9ff-11e6-8f10-ffbd041035b6",
+                "code": "40",
+                "name": "Substance list 40",
+                "version": "1.4"
+              }
+            ]
+          },
+          "form": {},
+          "tags": [],
+          "type": "qWithCheckboxes",
+          "label": "",
+          "filter": "",
+          "inline": false,
+          "values": [],
+          "dataSrc": "predefined.substancelist",
+          "template": "<span>{{ item.substance.name }}<\/span>",
+          "validate": {
+            "required": false
+          },
+          "inputType": "checkbox",
+          "protected": false,
+          "refreshOn": "",
+          "tableView": true,
+          "undefined": "Substance list",
+          "persistent": true,
+          "conditional": {
+            "eq": "",
+            "show": "",
+            "when": null
+          },
+          "dataSources": {
+            "url": "URL",
+            "comma": "Comma separated",
+            "values": "Values",
+            "predefined.substancelist": "Substance list",
+            "predefined.substancegroup": "Substance group"
+          },
+          "searchField": "",
+          "defaultValue": "",
+          "numericLabel": "1",
+          "selectValues": "data.results",
+          "labelProperty": "substance.name",
+          "valueProperty": "substance.id",
+          "predefinedlist": {
+            "predefined.substancelist": {
+              "Template": "<span>{{ item.substance.name }}<\/span>",
+              "SelectValues": "data.results",
+              "ValueProperty": "substance.id",
+              "PredefinedListID": "PredefinedLists1",
+              "PredefinedListName": "substancelist",
+              "PredefinedListLabel": "Substance list"
+            },
+            "predefined.substancegroup": {
+              "Template": "<span>{{ item.substance.name }}<\/span>",
+              "SelectValues": "data.results",
+              "ValueProperty": "substance.id",
+              "PredefinedListID": "PredefinedLists2",
+              "PredefinedListName": "substancegroup",
+              "PredefinedListLabel": "Substance group"
+            }
+          },
+          "dynamicCondition": {
+            "pages": [
+              {
+                "key": "resource1",
+                "title": "Resource 1"
+              }
+            ],
+            "answers": {},
+            "selectAll": true
+          },
+          "selectedPredefList": "a2eecc70-e9ff-11e6-8f10-ffbd041035b6",
+          "isNumericLabelEnabled": false
+        }
+      ],
+      "componentsCount": 20
+    }
+  ],
+  "dataVersion": 1
+}
