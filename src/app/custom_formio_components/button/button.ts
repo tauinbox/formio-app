@@ -19,7 +19,7 @@ export class CustomButton extends BaseComponent {
   elementInfo() {
     let info = super.elementInfo();
     info.type = 'button';
-    info.attr.type = this.component.action;
+    info.attr.type = (this.component.action === 'submit') ? 'submit' : 'button';
     info.attr.class = 'btn btn-' + this.component.theme;
     if (this.component.block) {
       info.attr.class += ' btn-block';
@@ -54,18 +54,22 @@ export class CustomButton extends BaseComponent {
       this.label = this.text(this.component.label);
       this.element.appendChild(this.label);
     }
-    this.on('submitDone', () => {
-      this.loading = false;
-      this.disabled = false;
-    }, true);
-    this.on('error', () => {
-      this.loading = false;
-    }, true);
+    if (this.component.action === 'submit') {
+      this.on('submitButton', () => {
+        this.loading = true;
+        this.disabled = true;
+      }, true);
+      this.on('submitDone', () => {
+        this.loading = false;
+        this.disabled = false;
+      }, true);
+      this.on('error', () => {
+        this.loading = false;
+      }, true);
+    }
     this.addEventListener(this.element, 'click', (event) => {
       switch (this.component.action) {
         case 'submit':
-          this.loading = true;
-          this.disabled = true;
           event.preventDefault();
           event.stopPropagation();
           this.emit('submitButton');

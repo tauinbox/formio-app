@@ -15,21 +15,56 @@ form.form = {
         label: 'Children',
         key: 'children',
         type: 'datagrid',
+        input: true,
         components: [
           {
             label: 'First Name',
             key: 'firstName',
-            type: 'textfield'
+            type: 'textfield',
+            input: true
           },
           {
             label: 'Last Name',
             key: 'lastName',
-            type: 'textfield'
+            type: 'textfield',
+            input: true
+          },
+          {
+            label: 'Gender',
+            key: 'gender',
+            type: 'select',
+            input: true,
+            data: {
+              values: [
+                {
+                  value: 'male',
+                  label: 'Male'
+                },
+                {
+                  value: 'female',
+                  label: 'Female'
+                },
+                {
+                  value: 'other',
+                  label: 'Other'
+                }
+              ]
+            },
+            dataSrc: 'values',
+            template: '<span>{% raw %}{{ item.label }}{% endraw %}</span>'
+          },
+          {
+            type: 'checkbox',
+            label: 'Dependant',
+            key: 'dependant',
+            inputType: 'checkbox',
+            input: true
           },
           {
             label: 'Birthdate',
             key: 'birthdate',
             type: 'datetime',
+            input: true,
             format: 'yyyy-MM-dd hh:mm a',
             enableDate: true,
             enableTime: true,
@@ -52,37 +87,12 @@ form.form = {
               readonlyInput: false,
               mousewheel: true,
               arrowkeys: true
-            }
-          },
-          {
-            type: 'checkbox',
-            label: 'Dependant',
-            key: 'dependant',
-            inputType: 'checkbox',
-            input: true
-          },
-          {
-            label: 'Gender',
-            key: 'gender',
-            type: 'select',
-            data: {
-              values: [
-                {
-                  value: 'male',
-                  label: 'Male'
-                },
-                {
-                  value: 'female',
-                  label: 'Female'
-                },
-                {
-                  value: 'other',
-                  label: 'Other'
-                }
-              ]
             },
-            dataSrc: 'values',
-            template: '<span>\{\{ item.label \}\}</span>'
+            "conditional": {
+              "eq": "true",
+              "when": "dependant",
+              "show": "true"
+            }
           }
         ]
       }
@@ -101,21 +111,56 @@ form.form = {
         label: 'Children',
         key: 'children',
         type: 'datagrid',
+        input: true,
         components: [
           {
             label: 'First Name',
             key: 'firstName',
-            type: 'textfield'
+            type: 'textfield',
+            input: true
           },
           {
             label: 'Last Name',
             key: 'lastName',
-            type: 'textfield'
+            type: 'textfield',
+            input: true
+          },
+          {
+            label: 'Gender',
+            key: 'gender',
+            type: 'select',
+            input: true,
+            data: {
+              values: [
+                {
+                  value: 'male',
+                  label: 'Male'
+                },
+                {
+                  value: 'female',
+                  label: 'Female'
+                },
+                {
+                  value: 'other',
+                  label: 'Other'
+                }
+              ]
+            },
+            dataSrc: 'values',
+            template: '<span>{% raw %}{{ item.label }}{% endraw %}</span>'
+          },
+          {
+            type: 'checkbox',
+            label: 'Dependant',
+            key: 'dependant',
+            inputType: 'checkbox',
+            input: true
           },
           {
             label: 'Birthdate',
             key: 'birthdate',
             type: 'datetime',
+            input: true,
             format: 'yyyy-MM-dd hh:mm a',
             enableDate: true,
             enableTime: true,
@@ -138,37 +183,12 @@ form.form = {
               readonlyInput: false,
               mousewheel: true,
               arrowkeys: true
-            }
-          },
-         {
-           type: 'checkbox',
-           label: 'Dependant',
-           key: 'dependant',
-           inputType: 'checkbox',
-           input: true
-         },
-          {
-            label: 'Gender',
-            key: 'gender',
-            type: 'select',
-            data: {
-              values: [
-                {
-                  value: 'male',
-                  label: 'Male'
-                },
-                {
-                  value: 'female',
-                  label: 'Female'
-                },
-                {
-                  value: 'other',
-                  label: 'Other'
-                }
-              ]
             },
-            dataSrc: 'values',
-            template: '<span>\{\{ item.label \}\}</span>'
+            "conditional": {
+              "eq": "true",
+              "when": "dependant",
+              "show": "true"
+            }
           }
         ]
       }
